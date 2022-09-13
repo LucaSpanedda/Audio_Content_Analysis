@@ -3,7 +3,6 @@
 
 echo "insert the wav file name without extension"
 read file
-
 for (( ; ; ))
 do
    echo "insert the number of the channel you want to extract"
