@@ -17,10 +17,22 @@ nomeplot = "XYZ-phase-space"
 fig = plt.figure()
 ax = Axes3D(fig) 
 
-ax.plot(xplt, yplt, zplt, color='g', alpha=0.7, linewidth=0.6)
-ax.set_xlabel("X Axis")
-ax.set_ylabel("Y Axis")
-ax.set_zlabel("Z Axis")
+# Hide grid lines
+ax.grid(False)
+# Hide axes grid
+ax.set_xticks([])
+ax.set_yticks([])
+ax.set_zticks([])
+# background color
+# Set the background color of the panes
+ax.w_xaxis.set_pane_color((1.0, 1.0, 1.0, 1.0))
+ax.w_yaxis.set_pane_color((1.0, 1.0, 1.0, 1.0))
+ax.w_zaxis.set_pane_color((1.0, 1.0, 1.0, 1.0))
+
+ax.plot(xplt, yplt, zplt, color='black', alpha=1.0, linewidth=0.4)
+ax.set_xlabel("X")
+ax.set_ylabel("Y")
+ax.set_zlabel("Z")
 ax.set_title("Phase Space")
 
 # save output
