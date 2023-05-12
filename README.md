@@ -1,7 +1,7 @@
 # Audio_Content_Analysis
 Repository for the Audio Content Analysis (ACA) with Python
 
-# Installation of the Dependencies
+# Installation dependencies
 
 ```
 sudo apt-get install python3 -y
